@@ -253,12 +253,12 @@ Edit the text to match who can attend the workshop. For instance:
 - This workshop is open to the public.
 - If you are interested in attending this workshop, contact me@example.com
   for more information
-
+{% endcomment %}
 <p id="who-can-attend">
     <strong>Who can attend?:</strong>
     This workshop is for scientists and students from King's College London.
 </p>
-{% endcomment %}
+
 
 <hr/>
 
@@ -350,7 +350,7 @@ of code below the Schedule `<h2>` header below with
 {% endcomment %}
 
 {% include custom-schedule.html %}
-
+{% comment %}
 {% if site.carpentry == "swc" %}
 {% include swc/schedule.html %}
 {% elsif site.carpentry == "dc" %}
@@ -359,7 +359,7 @@ of code below the Schedule `<h2>` header below with
 {% include lc/schedule.html %}
 {% elsif site.carpentry == "pilot" %}
 The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. If you would like to know the timing of these breaks in advance, please [contact the workshop organisers](#contact). For a list of lesson sections and estimated timings, [visit the lesson homepage]({{ site.lesson_site }}).
-{% comment %}
+
 Edit/replace the text above if you want to include a schedule table.
 See the contents of the _includes/custom_schedule.html file for an example of
 how one of these schedule tables is constructed.
